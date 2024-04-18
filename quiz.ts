@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer"
 
 console.log("Please check any one of the options from the list")
@@ -45,7 +45,8 @@ let Answer3=await inquirer.prompt([{
         name:"A4",
         type:"checkbox",
         message:"What is the purpose of installing Node.js for Typescript developement? ",
-        choices:["To run Typescript files","To transpile Typescript code to Javascript","To debug Typescript code","To format Typescript code"]
+        choices:["To run Typescript files","To transpile Typescript code to Javascript","To debug Typescript code",
+        "To format Typescript code"]
         }])
         if(Answer4.A4=="To transpile Typescript code to Javascript"){
             console.log("Correct Answer")
